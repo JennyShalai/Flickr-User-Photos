@@ -26,7 +26,7 @@ class UserPhotosTableViewController: UITableViewController {
         }
         
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "photoCell", for: indexPath) as! UserPhotosCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "photoCell", for: indexPath) as! UserPhotosTableViewCell
             //cell.textLabel?.text = self.store.userPhotos[indexPath.row].description
             
             if let url = URL(string: self.store.userPhotos[indexPath.row].photoURL) {

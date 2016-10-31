@@ -16,6 +16,7 @@
 		1BFB7D871DC7FD9E00D4FE17 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB7D861DC7FD9E00D4FE17 /* DataStore.swift */; };
 		1BFB7D891DC7FDED00D4FE17 /* UserPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB7D881DC7FDED00D4FE17 /* UserPhoto.swift */; };
 		1BFB7D8B1DC7FE5C00D4FE17 /* UserPhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB7D8A1DC7FE5C00D4FE17 /* UserPhotosTableViewController.swift */; };
+		1BFB7D8D1DC7FED500D4FE17 /* UserPhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB7D8C1DC7FED500D4FE17 /* UserPhotosTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1BFB7D861DC7FD9E00D4FE17 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		1BFB7D881DC7FDED00D4FE17 /* UserPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhoto.swift; sourceTree = "<group>"; };
 		1BFB7D8A1DC7FE5C00D4FE17 /* UserPhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotosTableViewController.swift; sourceTree = "<group>"; };
+		1BFB7D8C1DC7FED500D4FE17 /* UserPhotosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotosTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1BFB7D741DC6E2AB00D4FE17 /* ViewController.swift */,
 				1BFB7D841DC7FD0C00D4FE17 /* FlickrAPI.swift */,
 				1BFB7D881DC7FDED00D4FE17 /* UserPhoto.swift */,
+				1BFB7D8C1DC7FED500D4FE17 /* UserPhotosTableViewCell.swift */,
 				1BFB7D861DC7FD9E00D4FE17 /* DataStore.swift */,
 				1BFB7D8A1DC7FE5C00D4FE17 /* UserPhotosTableViewController.swift */,
 				1BFB7D761DC6E2AB00D4FE17 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BFB7D8D1DC7FED500D4FE17 /* UserPhotosTableViewCell.swift in Sources */,
 				1BFB7D851DC7FD0C00D4FE17 /* FlickrAPI.swift in Sources */,
 				1BFB7D8B1DC7FE5C00D4FE17 /* UserPhotosTableViewController.swift in Sources */,
 				1BFB7D891DC7FDED00D4FE17 /* UserPhoto.swift in Sources */,
