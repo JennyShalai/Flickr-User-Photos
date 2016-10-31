@@ -13,6 +13,7 @@
 		1BFB7D7A1DC6E2AB00D4FE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFB7D791DC6E2AB00D4FE17 /* Assets.xcassets */; };
 		1BFB7D7D1DC6E2AB00D4FE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFB7D7B1DC6E2AB00D4FE17 /* LaunchScreen.storyboard */; };
 		1BFB7D851DC7FD0C00D4FE17 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB7D841DC7FD0C00D4FE17 /* FlickrAPI.swift */; };
+		1BFB7D871DC7FD9E00D4FE17 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB7D861DC7FD9E00D4FE17 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1BFB7D7C1DC6E2AB00D4FE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BFB7D7E1DC6E2AB00D4FE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BFB7D841DC7FD0C00D4FE17 /* FlickrAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrAPI.swift; path = ../FlickrAPI.swift; sourceTree = "<group>"; };
+		1BFB7D861DC7FD9E00D4FE17 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1BFB7D721DC6E2AB00D4FE17 /* AppDelegate.swift */,
 				1BFB7D741DC6E2AB00D4FE17 /* ViewController.swift */,
 				1BFB7D841DC7FD0C00D4FE17 /* FlickrAPI.swift */,
+				1BFB7D861DC7FD9E00D4FE17 /* DataStore.swift */,
 				1BFB7D761DC6E2AB00D4FE17 /* Main.storyboard */,
 				1BFB7D791DC6E2AB00D4FE17 /* Assets.xcassets */,
 				1BFB7D7B1DC6E2AB00D4FE17 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BFB7D851DC7FD0C00D4FE17 /* FlickrAPI.swift in Sources */,
+				1BFB7D871DC7FD9E00D4FE17 /* DataStore.swift in Sources */,
 				1BFB7D751DC6E2AB00D4FE17 /* ViewController.swift in Sources */,
 				1BFB7D731DC6E2AB00D4FE17 /* AppDelegate.swift in Sources */,
 			);
