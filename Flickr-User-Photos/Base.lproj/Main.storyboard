@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SHC-UV-rSK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iQH-h1-UeL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -15,13 +15,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xIA-Wi-J1S" customClass="UserPhotosTableViewCell" customModule="Flickr_User_Photos" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" id="xIA-Wi-J1S" customClass="UserPhotosTableViewCell" customModule="Flickr_User_Photos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xIA-Wi-J1S" id="5kD-Mn-1db">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IAv-jb-YOo">
+                                            <frame key="frameInset" minX="17" width="375" height="44"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vR7-ar-zB2"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-JE-42E">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc6-2a-FWX">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="IAv-jb-YOo" firstAttribute="height" secondItem="xIA-Wi-J1S" secondAttribute="height" id="EEz-t0-NJ6"/>
+                                    <constraint firstItem="IAv-jb-YOo" firstAttribute="width" secondItem="xIA-Wi-J1S" secondAttribute="width" id="Ys6-0x-APm"/>
+                                    <constraint firstItem="IAv-jb-YOo" firstAttribute="centerX" secondItem="xIA-Wi-J1S" secondAttribute="centerX" id="bSb-YP-PJG"/>
+                                    <constraint firstItem="IAv-jb-YOo" firstAttribute="centerY" secondItem="xIA-Wi-J1S" secondAttribute="centerY" id="zj9-Vt-ocg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="date" destination="Nc6-2a-FWX" id="xR2-y0-Fb8"/>
+                                    <outlet property="name" destination="ccU-JE-42E" id="RcV-21-y0d"/>
+                                    <outlet property="photo" destination="vR7-ar-zB2" id="E7b-On-gFs"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -29,10 +58,29 @@
                             <outlet property="delegate" destination="SHC-UV-rSK" id="17Z-Io-zg7"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="EmL-gH-pwE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22A-f4-nsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-124" y="158"/>
+            <point key="canvasLocation" x="591.20000000000005" y="156.97151424287858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="79b-7p-gMr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iQH-h1-UeL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="klV-mh-75u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SHC-UV-rSK" kind="relationship" relationship="rootViewController" id="hPG-St-fzJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wb1-nA-3fL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="157"/>
         </scene>
     </scenes>
 </document>
